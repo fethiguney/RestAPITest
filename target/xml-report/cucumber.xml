@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="8.826">
+    <testcase classname="Reqres API test" name="Get a single user informations and do assertion" time="8.329">
+        <failure message="expected:&lt;Jane[]&gt; but was:&lt;Jane[t]&gt;" type="org.junit.ComparisonFailure">
+            <![CDATA[Given set the url to get a single user......................................passed
+And set the expected data with to get a single user.........................passed
+When send a request to get a single user and get response...................passed
+Then assert that status code 200............................................passed
+And assert that expected data equals to actual data.........................failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<Jane[]> but was:<Jane[t]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepDefinitons.StepDefinitions.assert_that_expected_data_equals_to_actual_data(StepDefinitions.java:52)
+	at ✽.assert that expected data equals to actual data(file:///C:/Users/user/IdeaProjects/API_Test/src/test/resources/features/Api.feature:10)
+]]>
+        </failure>
+    </testcase>
+</testsuite>

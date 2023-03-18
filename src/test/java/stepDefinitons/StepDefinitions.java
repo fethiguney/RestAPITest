@@ -42,6 +42,7 @@ public class StepDefinitions {
     @Then("assert that status code {int}")
     public void assert_that_status_code(int successStatusCode) {
         response.then().statusCode(successStatusCode);
+
     }
     @Then("assert that expected data equals to actual data")
     public void assert_that_expected_data_equals_to_actual_data() {

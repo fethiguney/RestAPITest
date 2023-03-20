@@ -5,17 +5,17 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Booking {
 
-    private int firstname;
+    private String firstname;
     private String lastname;
-    private String totalprice;
-    private String depositpaid;
+    private int totalprice;
+    private boolean depositpaid;
     private BookingDates bookingDates;
     private String additionalneeds;
 
     public Booking() {
     }
 
-    public Booking(int firstname, String lastname, String totalprice, String depositpaid, BookingDates bookingDates, String additionalneeds) {
+    public Booking(String firstname, String lastname, int totalprice, boolean depositpaid, BookingDates bookingDates, String additionalneeds) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.totalprice = totalprice;
@@ -24,11 +24,11 @@ public class Booking {
         this.additionalneeds = additionalneeds;
     }
 
-    public int getFirstname() {
+    public String getFirstname() {
         return firstname;
     }
 
-    public void setFirstname(int firstname) {
+    public void setFirstname(String firstname) {
         this.firstname = firstname;
     }
 
@@ -40,19 +40,19 @@ public class Booking {
         this.lastname = lastname;
     }
 
-    public String getTotalprice() {
+    public int getTotalprice() {
         return totalprice;
     }
 
-    public void setTotalprice(String totalprice) {
+    public void setTotalprice(int totalprice) {
         this.totalprice = totalprice;
     }
 
-    public String getDepositpaid() {
+    public boolean isDepositpaid() {
         return depositpaid;
     }
 
-    public void setDepositpaid(String depositpaid) {
+    public void setDepositpaid(boolean depositpaid) {
         this.depositpaid = depositpaid;
     }
 
@@ -75,10 +75,10 @@ public class Booking {
     @Override
     public String toString() {
         return "Booking{" +
-                "firstname=" + firstname +
+                "firstname='" + firstname + '\'' +
                 ", lastname='" + lastname + '\'' +
-                ", totalprice='" + totalprice + '\'' +
-                ", depositpaid='" + depositpaid + '\'' +
+                ", totalprice=" + totalprice +
+                ", depositpaid=" + depositpaid +
                 ", bookingDates=" + bookingDates +
                 ", additionalneeds='" + additionalneeds + '\'' +
                 '}';

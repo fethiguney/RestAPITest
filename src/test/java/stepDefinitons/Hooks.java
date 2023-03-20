@@ -2,11 +2,14 @@ package stepDefinitons;
 
 import io.cucumber.java.Before;
 
-import static baseUrl.RestfulBaseUrl.restfulSetup;
+import static baseUrl.RestfulBookerBaseUrl.restfulSetUp;
 
 public class Hooks {
-    @Before(value ="@apitest" )
+
+    @Before
     public void beforeApi() {
-        restfulSetup();
+        restfulSetUp();
     }
+
+
 }

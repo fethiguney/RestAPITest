@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="7.164">
-    <testcase classname="Reqres API test" name="Get a single user informations and do assertion" time="6.727">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="11.097">
+    <testcase classname="Restful booker API test" name="Get a specific booking based upon the booking id provided" time="10.8">
         <system-out>
-            <![CDATA[Given set the url to get a single user......................................passed
-And set the expected data with to get a single user.........................passed
-When send a request to get a single user and get response...................passed
-Then assert that status code 200............................................passed
-And assert that expected data equals to actual data.........................passed
+            <![CDATA[Given user sends a get request for specific booking.........................passed
+And user gets the booking data and validates................................passed
 ]]>
         </system-out>
     </testcase>

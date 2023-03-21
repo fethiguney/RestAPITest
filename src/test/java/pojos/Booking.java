@@ -1,26 +1,26 @@
 package pojos;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Booking {
 
     private String firstname;
     private String lastname;
-    private int totalprice;
-    private boolean depositpaid;
-    private BookingDates bookingDates;
+    private Integer totalprice;
+    private Boolean depositpaid;
+    private BookingDates bookingdates;
     private String additionalneeds;
 
     public Booking() {
     }
 
-    public Booking(String firstname, String lastname, int totalprice, boolean depositpaid, BookingDates bookingDates, String additionalneeds) {
+    public Booking(String firstname, String lastname, Integer totalprice, Boolean depositpaid, BookingDates bookingdates, String additionalneeds) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.totalprice = totalprice;
         this.depositpaid = depositpaid;
-        this.bookingDates = bookingDates;
+        this.bookingdates = bookingdates;
         this.additionalneeds = additionalneeds;
     }
 
@@ -40,28 +40,28 @@ public class Booking {
         this.lastname = lastname;
     }
 
-    public int getTotalprice() {
+    public Integer getTotalprice() {
         return totalprice;
     }
 
-    public void setTotalprice(int totalprice) {
+    public void setTotalprice(Integer totalprice) {
         this.totalprice = totalprice;
     }
 
-    public boolean isDepositpaid() {
+    public Boolean getDepositpaid() {
         return depositpaid;
     }
 
-    public void setDepositpaid(boolean depositpaid) {
+    public void setDepositpaid(Boolean depositpaid) {
         this.depositpaid = depositpaid;
     }
 
-    public BookingDates getBookingDates() {
-        return bookingDates;
+    public BookingDates getBookingdates() {
+        return bookingdates;
     }
 
-    public void setBookingDates(BookingDates bookingDates) {
-        this.bookingDates = bookingDates;
+    public void setBookingdates(BookingDates bookingdates) {
+        this.bookingdates = bookingdates;
     }
 
     public String getAdditionalneeds() {
@@ -79,7 +79,7 @@ public class Booking {
                 ", lastname='" + lastname + '\'' +
                 ", totalprice=" + totalprice +
                 ", depositpaid=" + depositpaid +
-                ", bookingDates=" + bookingDates +
+                ", bookingdates=" + bookingdates +
                 ", additionalneeds='" + additionalneeds + '\'' +
                 '}';
     }

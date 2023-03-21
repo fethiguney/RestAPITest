@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="11.097">
-    <testcase classname="Restful booker API test" name="Get a specific booking based upon the booking id provided" time="10.8">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="5.563">
+    <testcase classname="Restful booker API test" name="Create a new booking in the API" time="5.266">
         <system-out>
-            <![CDATA[Given user sends a get request for specific booking.........................passed
+            <![CDATA[Given user set the expected data............................................passed
+When user sends a post request to to create a new booking...................passed
 And user gets the booking data and validates................................passed
 ]]>
         </system-out>

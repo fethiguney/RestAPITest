@@ -13,20 +13,20 @@ public class Authentication {
 
 
     public static String generateToken() {
-        String username = "";
-        String password = "";
+        String username = "admin";
+        String password = "password123";
 
         Map <String, Object> map = new HashMap<>();
         map.put("username", username);
         map.put("password",password);
 
 
-        String endPoint = "";
+        String endPoint = "https://restful-booker.herokuapp.com/auth";
 
         Response response = given().contentType(ContentType.JSON).body(map).when().post(endPoint);
 
         JsonPath token = response.jsonPath();
 
-        return token.getString("");
+        return token.getString("token");
     }
 }

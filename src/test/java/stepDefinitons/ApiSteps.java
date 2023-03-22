@@ -72,4 +72,20 @@ public class ApiSteps {
         assertEquals(expectedData.getAdditionalneeds(), getActualData.getAdditionalneeds());
     }
 
+    @Given("user set the expected data and update all data")
+    public void user_set_the_expected_data_and_update_all_data() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+    @When("user sends a put request to new created booking to update all data")
+    public void user_sends_a_put_request_to_new_created_booking_to_update_all_data() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+    @Then("user gets the put request response and validates")
+    public void user_gets_the_put_request_response_and_validates() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+
 }

@@ -10,6 +10,7 @@
 
     @getRequest
     Scenario:Get the created booking id informations
+      Given user set the expected data
       Given user sends a get request for created booking
       And user gets the booking id data and validates
 

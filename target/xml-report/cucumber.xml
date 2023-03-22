@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="5.563">
-    <testcase classname="Restful booker API test" name="Create a new booking in the API" time="5.266">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="6.405">
+    <testcase classname="Restful booker API test" name="Create a new booking in the API" time="5.062">
         <system-out>
             <![CDATA[Given user set the expected data............................................passed
 When user sends a post request to to create a new booking...................passed
 And user gets the booking data and validates................................passed
 ]]>
         </system-out>
+    </testcase>
+    <testcase classname="Restful booker API test" name="Get the created booking id informations" time="1.001">
+        <failure message="" type="java.lang.NullPointerException">
+            <![CDATA[Given user sends a get request for created booking..........................passed
+And user gets the booking id data and validates.............................failed
+
+StackTrace:
+java.lang.NullPointerException
+	at stepDefinitons.ApiSteps.user_gets_the_booking_id_data_and_validates(ApiSteps.java:65)
+	at ✽.user gets the booking id data and validates(file:///C:/Users/user/IdeaProjects/API_Test/src/test/resources/features/ApiTest.feature:14)
+]]>
+        </failure>
     </testcase>
 </testsuite>
